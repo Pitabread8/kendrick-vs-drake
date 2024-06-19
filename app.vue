@@ -45,6 +45,12 @@ export default {
       this.audio.play();
       timeline = new TL.Timeline("timeline-embed", "https://docs.google.com/spreadsheets/d/1yPDe-wopvP_4WV93aIuROohvYDt_myLelFf-G0HPE0U/edit", { initial_zoom: 6 });
     },
+    scrollToElement() {
+      const el = document.getElementsByTagName("main")[0];
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>
@@ -54,14 +60,18 @@ export default {
     <Link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" />
   </Head>
   <section v-if="!isOpen" class="h-screen w-screen bg-black">
-    <button @click="openPage()" class="animate-play fixed left-1/2 top-1/2 h-36 w-36 origin-[0_0] translate-x-[-50%] translate-y-[-50%] rounded-full bg-white hover:animate-none">
+    <button @click="openPage()" class="fixed left-1/2 top-1/2 h-36 w-36 origin-[0_0] translate-x-[-50%] translate-y-[-50%] animate-play rounded-full bg-white hover:animate-none">
       <Icon class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-8xl text-black" name="mdi:play" />
     </button>
   </section>
-  <section v-show="isOpen" class="h-screen w-screen bg-red-300">
-    <div class="relative p-40 text-white">
-      <h1>Title</h1>
+  <section v-show="isOpen" class="flex h-screen w-screen flex-col items-center justify-around bg-red-300 p-40 text-white">
+    <div class="text-center">
+      <h1 class="mb-8 text-5xl font-bold md:text-6xl lg:text-7xl">Kendrick Lamar vs. Drake Beef Explained</h1>
+      <h2 class="text-xl md:text-2xl lg:text-3xl">By Meghna, Sita, and Varin</h2>
     </div>
+    <button @click="scrollToElement()" class="h-auto w-auto">
+      <Icon class="text-7xl text-white" name="vaadin:arrow-circle-down" />
+    </button>
   </section>
   <main v-show="isOpen">
     <section class="h-screen w-auto bg-green-600"></section>
