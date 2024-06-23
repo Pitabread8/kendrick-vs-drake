@@ -11,6 +11,7 @@ import meetthegrahams from "../assets/audio/meetthegrahams.mp3";
 import notlikeus from "../assets/audio/notlikeus.mp3";
 import theheartpart6 from "../assets/audio/theheartpart6.mp3";
 import bbldrizzy from "../assets/audio/bbldrizzy.mp3";
+import backgroundImage from "/bg-image.jpg";
 
 export default {
   beforeMount() {
@@ -27,6 +28,7 @@ export default {
   },
   data() {
     return {
+      backgroundImage,
       isOpen: false,
       audio: null,
     };
@@ -64,14 +66,18 @@ export default {
       <Icon class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-8xl text-black" name="mdi:play" />
     </button>
   </section>
-  <section v-show="isOpen" class="flex h-screen w-screen flex-col items-center justify-around bg-red-300 p-40 text-white">
-    <div class="text-center">
-      <h1 class="mb-8 text-5xl font-bold md:text-6xl lg:text-7xl">Kendrick Lamar vs. Drake Beef Explained</h1>
-      <h2 class="text-xl md:text-2xl lg:text-3xl">By Meghna, Sita, and Varin</h2>
+  <section v-show="isOpen">
+    <img class="fixed -z-10 hidden h-screen w-screen object-cover md:block" src="/bg-image.jpg" />
+    <div class="flex h-screen w-screen flex-col items-center justify-around bg-[#D94D4E] p-20 md:p-40 text-white md:bg-transparent md:backdrop-brightness-50">
+      <div class="text-center">
+        <h1 class="mb-8 text-5xl font-bold md:text-6xl lg:text-7xl">Kendrick Lamar vs. Drake Beef Explained</h1>
+        <h2 class="text-xl md:text-2xl lg:text-3xl">By Meghna, Sita, and Varin</h2>
+      </div>
+      <button @click="scrollToElement()">
+        <Icon class="animate-bounce text-7xl" name="vaadin:arrow-circle-down" />
+      </button>
     </div>
-    <button @click="scrollToElement()" class="h-auto w-auto">
-      <Icon class="text-7xl text-white" name="vaadin:arrow-circle-down" />
-    </button>
+    <a href="https://www.theringer.com/rap/2024/5/4/24149035" target="_blank" class="absolute bottom-6 right-9 hidden text-[#D94D4E] underline md:inline-block">Image courtesy of Getty Images/Ringer</a>
   </section>
   <main v-show="isOpen">
     <section class="h-screen w-auto bg-green-600"></section>
