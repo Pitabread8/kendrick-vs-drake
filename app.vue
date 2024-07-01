@@ -68,7 +68,7 @@ export default {
   </section>
   <section v-show="isOpen">
     <img class="fixed -z-10 hidden h-screen w-screen object-cover md:block" src="/bg-image.jpg" />
-    <div class="flex h-screen w-screen flex-col items-center justify-around bg-[#D94D4E] p-20 md:p-40 text-white md:bg-transparent md:backdrop-brightness-50">
+    <div class="flex h-screen w-screen flex-col items-center justify-around bg-[#D94D4E] p-20 text-white md:bg-transparent md:p-40 md:backdrop-brightness-50">
       <div class="text-center">
         <h1 class="mb-8 text-5xl font-bold md:text-6xl lg:text-7xl">Kendrick Lamar vs. Drake Beef Explained</h1>
         <h2 class="text-xl md:text-2xl lg:text-3xl">By Meghna, Sita, and Varin</h2>
@@ -80,8 +80,7 @@ export default {
     <a href="https://www.theringer.com/rap/2024/5/4/24149035" target="_blank" class="absolute bottom-6 right-9 hidden text-[#D94D4E] underline md:inline-block">Image courtesy of Getty Images/Ringer</a>
   </section>
   <main v-show="isOpen">
-    <section class="h-screen w-auto bg-green-600"></section>
     <div id="timeline-embed" style="width: 100%; height: 600px"></div>
-    <section v-if="isOpen" class="h-auto w-auto bg-blue-600"></section>
+    <Controversy />
   </main>
 </template>
