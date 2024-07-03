@@ -80,6 +80,7 @@ export default {
     <a href="https://www.theringer.com/rap/2024/5/4/24149035" target="_blank" class="absolute bottom-6 right-9 hidden text-[#D94D4E] underline md:inline-block">Image courtesy of Getty Images/Ringer</a>
   </section>
   <main v-show="isOpen">
+    <Introduction />
     <div id="timeline-embed" style="width: 100%; height: 600px"></div>
     <Controversy />
   </main>
