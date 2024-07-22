@@ -4,8 +4,8 @@
             Both Drake and Kendrick Lamar have consistently accused each other of illegal activity and overall misconduct.
             <br />
             <br />
-            Kendrick Lamar acted on existing rumors of Drake being a pedophile throughout his disses. These rumors primarily stemmed from Drake&apos;s publicly scrutinized relationship with Millie Bobby Brown, which most considered to have been grooming. Many of Drake&apos;s colleagues and friends
-            are also convicted sex offenders, which Lamar mentions in “Meet the Grahams.” Additionally, evidence of Drake having intimate relationships with seventeen-year-olds has been going around, amongst many fake AI-generated clips of the same manner.
+            Kendrick Lamar acted on existing rumors of Drake being a pedophile throughout his disses. These rumors primarily stemmed from Drake&apos;s publicly scrutinized relationship with Millie Bobby Brown, which most consider to have been grooming. Many of Drake&apos;s colleagues and friends
+            (and Lamar's as well, for that matter) are also convicted sex offenders, which Lamar mentions in “Meet the Grahams.” Additionally, evidence of Drake having intimate relationships with seventeen-year-olds has been going around, albeit amongst many fake AI-generated clips of the same manner.
             <br />
             <br />
             On the other hand, Drake has accused Kendrick Lamar of sexually abusing his partner, Whitney Alford. These rumors did exist earlier, but were quickly shut down as there was little supporting evidence. Alford has stayed silent; however, her brother has shown open support for Kendrick,
@@ -22,7 +22,8 @@
             <br />
             <br />
             Some suspect the feud as a whole is a publicity stunt, and it has clearly become entertainment for most. The rappers themselves are certainly aware of our enjoyment, as they are releasing music to maximize their listeners&apos; engagement. However, it is important to acknowledge the
-            weaponization of abuse in this situation and consider the validity of Drake's and Kendrick Lamar&apos;s claims alike.
+            weaponization of abuse in this situation and consider the validity of Drake's and Kendrick Lamar&apos;s claims alike. After all,
+            <a href="https://popula.com/2024/05/15/after-the-beef" target="_blank" class="text-black underline">beef is often much more about performance than facts</a>.
         </p>
     </section>
 </template>
