@@ -63,7 +63,7 @@ export default {
     </Head>
     <section v-if="!isOpen" class="h-screen w-screen bg-black">
         <button @click="openPage()" class="fixed left-1/2 top-1/2 h-36 w-36 origin-[0_0] translate-x-[-50%] translate-y-[-50%] animate-play rounded-full bg-white hover:animate-none">
-            <Icon class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-8xl text-black" name="mdi:play" />
+            <Icon class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-8xl text-black" name="mdi:volume-high" />
         </button>
     </section>
     <section v-show="isOpen">
